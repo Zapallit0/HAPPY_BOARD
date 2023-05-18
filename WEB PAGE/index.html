@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea616868b1.js" crossorigin="anonymous"></script>
+    <script></script>
+    <title>HAPPY-BOARD</title>
+</head>
+<body>
+    <header>
+<!-- <div class="navbar"> -->
+        <div class="logo">
+          <a href="index.html"><img class="Imglog" src="Images/Logo_mini1-removebg-preview.png" alt="Crown" ></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#About_us">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+          <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="dropdown_menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#About_us">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
+          </div>
+        </nav>
+<!-- </div> -->
+      </header>
+      <script>
+        const toggleBtn=document.querySelector('.toggle_btn')
+        const toggleBtnIcon=document.querySelector('.toggle_btn i')
+        const dropDownMenu=document.querySelector('.dropdown_menu')
+        
+        toggleBtn.onclick=function(){
+          dropDownMenu.classList.toggle('open')
+          const isOpen=dropDownMenu.classList.contains('open')
+
+          toggleBtnIcon.classList=isOpen 
+          ?'fa-solid fa-xmark':'fa-solid fa-bars' 
+
+        }
+      </script>
+      <main>
+        <div class="portada" id="Home">
+          <div class="Titulos">
+            <h1><div class="letter">H</div><div class="letter">A</div><div class="letter">P</div><div class="letter">P</div><div class="letter">Y&nbsp</div><div class="letter"> B</div><div class="letter">O</div><div class="letter">A</div><div class="letter">R</div><div class="letter">D</div></h1>
+            <h3>Learn  Play  Grow</h3>
+          </div>
+          <div class="slider position">
+          </div>
+        </div>
+        
+      
+<!--SECCIONES  -->
+       <div class="ListServices" id="Services">
+        <div class="List_title"><h4>What do we&nbsp<h4 class=""><span>offer?</span></h4></h4></div>
+        <div class="Services">
+          <div class="Service"><a href=""><i class="fa-solid fa-user-doctor"></i></a><h5>Servicio1</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam perspiciatis obcaecati placeat autem mollitia tempore atque.</p>
+          </div>
+          <div class="Service"><a href=""><i class="fa-solid fa-hospital"></i></a><h5>Servicio2</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam perspiciatis obcaecati placeat autem mollitia tempore atque.</p>
+          </div>
+          <div class="Service"><a href=""><i class="fa-solid fa-seedling"></i></a><h5>Servicio3</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam perspiciatis obcaecati placeat autem mollitia tempore atque.</p>
+          </div>
+          <div class="Service"><a href=""><i class="fa-solid fa-people-arrows"></i></a><h5>Servicio4</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam quam perspiciatis obcaecati placeat autem mollitia tempore atque.</p>
+          </div>
+        </div>
+        <div class="btn_more"> <a href="# "><strong>Learn More</strong> </a></div>
+        </div> 
+        <div class="about" id="About_us">
+          <h2 class="our_team">OUR TEAM</h2>
+          <p class="about_us">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id enim tenetur distinctio, repudiandae at voluptatem quo, debitis, explicabo maiores eveniet? Et perferendis nam provident aspernatur in cupiditate repudiandae dignissimos!</p>
+          <div class="team">
+            <div class="team_member">
+              <div class="team_img">
+                <img src="Images/Integrantes/foto_provisional-removebg-preview (1).png" alt="">
+              </div>
+              <h3>Jhersvin Villodas</h3>
+              <p class="role"> Ing de Software </p>
+              <p>eligendi debitis ipsum quidem numquam laudantium voluptatum a nam explicabo earum quos et impedit labore hic voluptas non!</p>
+            </div>
+            <div class="team_member">
+              <div class="team_img">
+                <img src="Images/Integrantes/foto_provisional-removebg-preview (1).png" alt="">
+              </div>
+              <h3>Amy Francia</h3>
+              <p class="role"> UI developer </p>
+              <p>eligendi debitis ipsum quidem numquam laudantium voluptatum a nam explicabo earum quos et impedit labore hic voluptas non!</p>
+            </div>
+            <div class="team_member">
+              <div class="team_img">
+                <img src="Images/Integrantes/foto_provisional-removebg-preview (1).png" alt="">
+              </div>
+              <h3>Daphne Reategui</h3>
+              <p class="role"> UI developer </p>
+              <p>eligendi debitis ipsum quidem numquam laudantium voluptatum a nam explicabo earum quos et impedit labore hic voluptas non!</p>
+            </div>
+            <div class="team_member">
+              <div class="team_img">
+                <img src="Images/Integrantes/foto_provisional-removebg-preview (1).png" alt="">
+              </div>
+              <h3>Libertad Calderón</h3>
+              <p class="role"> UI developer </p>
+              <p>eligendi debitis ipsum quidem numquam laudantium voluptatum a nam explicabo earum quos et impedit labore hic voluptas non!</p>
+            </div>
+            <div class="team_member">
+              <div class="team_img">
+                <img src="Images/Integrantes/foto_provisional-removebg-preview (1).png" alt="">
+              </div>
+              <h3>Victor Yovera</h3>
+              <p class="role"> UI developer </p>
+              <p>eligendi debitis ipsum quidem numquam laudantium voluptatum a nam explicabo earum quos et impedit labore hic voluptas non!</p>
+            </div>
+            <div class="team_member">
+              <div class="team_img">
+                <img src="Images/Integrantes/foto_provisional-removebg-preview (1).png" alt="">
+              </div>
+              <h3>William Huisa</h3>
+              <p class="role"> UI developer </p>
+              <p>eligendi debitis ipsum quidem numquam laudantium voluptatum a nam explicabo earum quos et impedit labore hic voluptas non!</p>
+            </div>
+          </div>
+        </div>
+        
+        
+      </main>
+<!-- FOOTER -->
+      <footer>
+        <div class="container__footer" id="Contact">
+          <div class="box__footer">
+            <div class="logo">
+              <img src="Images/LogoCrown-removebg-preview.png" alt="">
+            </div>
+            <div class="terms">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet natus dolore similique at iste architecto sit accusamus impedit odit ex, id illum corrupti quaerat alias perferendis eius excepturi porro!</p>
+            </div>
+          </div>
+          <div class="box__footer">
+            <h2>Servicios</h2>
+            <a href="#">Servicio1</a>
+            <a href="#">Servicio2</a>
+            <a href="#">Servicio3</a>
+            <a href="#">Servicio4</a>
+          </div>
+            <div class="box__footer">
+              <h2>Nosotros</h2>
+              <a href="#">Acerca de</a>
+              <a href="#">Trabajos</a>
+              <a href="#">Nosotros1</a>
+              <a href="#">Nosotros2</a>
+            </div>
+          <div class="box__footer">
+            <h2>Redes Sociales</h2>
+            <a href="#"><i class="fa-brands fa-facebook"></i>  Facebook</a>
+            <a href="#"><i class="fa-brands fa-instagram"></i>  Instagram</a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
+            <a href="#"><i class="fa-brands fa-twitter"></i>  Twitter</a>
+          </div>
+
+        </div>
+        <div class="box__copyright">
+          <hr>
+          <p>Todos los derechos reservados ©2023
+          <b>HappyBoard</b></p>
+        </div>
+      </footer>
+</body>
+</html>
